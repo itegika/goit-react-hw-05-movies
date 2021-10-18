@@ -19,22 +19,21 @@ function SearchForm({ onSubmit }) {
   };
 
   return (
-      <form className={styles.SearchForm} onSubmit={handleSubmit}>
-        <button type="submit" className={styles.SearchFormButton}>
-          <span className={styles.SearchFormButtonLabel}>Search</span>
-        </button>
-        <input
-          className={styles.SearchFormInput}
+    <form className={styles.SearchForm} onSubmit={handleSubmit}>
+      <button type="submit" className={styles.SearchFormButton}>
+        <span className={styles.SearchFormButtonLabel}>Search</span>
+      </button>
+      <input
+        className={styles.SearchFormInput}
         type="text"
         name="input"
-          autoComplete="off"
-          autoFocus
-          placeholder="Search movie"
-          value={value}
-          onChange={handleChange}
-        />
-      </form>
-
+        autoComplete="off"
+        autoFocus
+        placeholder="Search movie"
+        value={value}
+        onChange={handleChange}
+      />
+    </form>
   );
 }
 
