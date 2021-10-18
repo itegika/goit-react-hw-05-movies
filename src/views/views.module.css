@@ -1,0 +1,128 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  text-align: center;
+  list-style: none;
+}
+
+.item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 230px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  transition: 0.25s;
+}
+
+.title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(89, 89, 104);
+}
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  /* width: 100px; */
+}
+
+.castItem {
+  margin: 5px;
+  width: 100px;
+}
+
+.castName {
+  text-align: center;
+}
+
+
+ .movieBox {
+  display: flex;
+ padding-top: 15px;
+ padding-bottom: 15px;
+}
+
+.movieInfoBox {
+  text-align: start;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.movieDescrTitle {
+  font-size: 30px;
+ color: #2196f3;
+}
+
+.rating {
+  margin: 0;
+  display: inline-block;
+  /* padding: 15px; */
+color: #2196f3;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 20px;
+color: #2196f3;
+}
+
+.description {
+  margin: 0;
+  padding: 15px;
+  font-weight: 400;
+color: #1d1e1f;
+}
+
+.genres {
+  margin: 0;
+  display: inline-block;
+  padding: 5px 20px;
+  font-weight: 400;
+  list-style: none;
+color: #1d1e1f;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 500;
+  color: #2a363b;
+  font-size: 18px;
+}
+
+.activeLink {
+  composes: link;
+  color: #2196f3;
+}
+.button {
+  cursor: pointer;
+  color: aliceblue;
+  background-color: #2196f3;
+  border-radius: 5%;
+  padding: 5px;
+  border-style: hidden;
+} 
+
+.reviewsDescr {
+  margin: 0;
+  font-weight: 400;
+}
+
+.reviewsTitle {
+  font-size: 18px;
+color: #2196f3;
+}
+
+.reviewsItem {
+  list-style: none;
+  padding: 15px;
+}
