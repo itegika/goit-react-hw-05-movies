@@ -1,21 +1,20 @@
-import {fetchTrends} from '../API/API';
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { fetchTrends } from "../../API/API";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function HomeView() {
   const location = useLocation();
   const [trends, setTrends] = useState([]);
-    
+
   useEffect(() => {
     fetchTrends().then(setTrends);
   }, []);
-
 
   return (
     <>
       <h1>Trending movies</h1>
 
-        <ul>
+      <ul>
         {trends &&
           trends.map((trend) => (
             <li key={trend.id}>
@@ -27,7 +26,9 @@ export default function HomeView() {
                   },
                 }}
               >
-                {trend.original_title ? trend.original_title : trend.original_name}
+                {trend.original_title
+                  ? trend.original_title
+                  : trend.original_name}
               </Link>
             </li>
           ))}

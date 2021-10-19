@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useRouteMatch, useLocation, useHistory } from "react-router-dom";
-import { fetchMovies, IMAGE_URL } from "../API/API";
-import SearchForm from "../components/SearchForm";
-import styles from "./views.module.css";
+import { fetchMovies, IMAGE_URL } from "../../API/API";
+import SearchForm from "../../components/SearchForm";
+import styles from "../views.module.css";
 
 export default function MoviesView() {
   const { url } = useRouteMatch();

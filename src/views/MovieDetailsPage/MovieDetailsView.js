@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { fetchMovieDetails, IMAGE_URL } from "../API/API";
+import { fetchMovieDetails, IMAGE_URL } from "../../API/API";
 import {
   useParams,
   useRouteMatch,
@@ -9,15 +9,17 @@ import {
   useLocation,
   useHistory,
 } from "react-router-dom";
-import Spinner from "../components/Spinner";
+import Spinner from "../../components/Spinner";
 import { lazy, Suspense } from "react";
-import styles from "./views.module.css";
+import styles from "../views.module.css";
 
 const CastView = lazy(() =>
-  import("../views/CastView" /* webpackChunkName: "CastView" */)
+  import("../MovieDetailsPage/CastView" /* webpackChunkName: "CastView" */)
 );
 const ReviewsView = lazy(() =>
-  import("../views/ReviewsView" /* webpackChunkName: "ReviewsView" */)
+  import(
+    "../MovieDetailsPage/ReviewsView" /* webpackChunkName: "ReviewsView" */
+  )
 );
 
 const MovieDetailsView = () => {
